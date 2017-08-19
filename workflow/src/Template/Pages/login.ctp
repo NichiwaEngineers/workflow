@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8" />
-	<title>ÉçÉOÉCÉìâÊñ </title>
+	<title>„É≠„Ç∞„Ç§„É≥ÁîªÈù¢</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 	<style type="text/css">
 	    body {
@@ -20,19 +20,19 @@
         <div class="row">
             <div class="col-xs-12 col-md-push-3 col-md-6">
                 <div class="form-wrap">
-                    <div class="text-center"><h1>é–àıä«óù</h1></div>
+                    <div class="text-center"><h1>Á§æÂì°ÁÆ°ÁêÜ</h1></div>
                     <br/>
                     <form role="form" action="#" method="post" id="login-form" autocomplete="off">
                         <div class="form-group">
                             <label for="id" class="sr-only">ID</label>
-                            <input type="text" name="id" id="id" class="form-control" placeholder="ID Çì¸óÕÇµÇƒâ∫Ç≥Ç¢"/>
+                            <input type="text" name="id" id="id" class="form-control" placeholder="ID „ÇíÂÖ•Âäõ„Åó„Å¶‰∏ã„Åï„ÅÑ"/>
                         </div>
                         <div class="form-group">
                             <label for="password" class="sr-only">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Password Çì¸óÕÇµÇƒâ∫Ç≥Ç¢"/>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password „ÇíÂÖ•Âäõ„Åó„Å¶‰∏ã„Åï„ÅÑ"/>
                         </div>
                         <br/>
-                        <button id="btn-login" class="btn btn-primary btn-block">ÉçÉOÉCÉì</button>
+                        <button id="btn-login" class="btn btn-primary btn-block">„É≠„Ç∞„Ç§„É≥</button>
                     </form>
                 </div>
             </div>
