@@ -229,9 +229,9 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'root',
-            'password' => '',
-            'database' => 'test',
+            'username' => 'nichiwa_devwf',
+            'password' => 'knmuthf2017',
+            'database' => 'nichiwa_devworkflowdb',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
