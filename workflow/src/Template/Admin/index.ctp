@@ -42,6 +42,19 @@
 	            <input type="button" value="申請者"/>
 	            <input type="button" value="状態"/>
 	            <input type="button" value="文章番号"/>
+
+	            <?php
+	                foreach($names as $name) {
+	                	echo($name->apply_date);
+	                	echo($name->type);
+	                	//echo($name->);
+	                	echo($name->status);
+	                	echo($name->apply_id);
+	                }
+	                ?>
+	                echo '<br />';
+	                <?php
+                 ?>
 	        </div>
 <!--
             <div class="col-xs-12 col-md-push-3 col-md-6">
