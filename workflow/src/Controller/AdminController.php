@@ -11,4 +11,7 @@ class AdminController extends AppController
         $Apply = $Apply->toArray();
         $this->set('names', $Apply);
     }
+    
+    public function login() {
+    }
 }

@@ -37,45 +37,36 @@
 	                <option value="選択肢2">選択肢2</option>
 	                <option value="選択肢3">選択肢3</option>
 	            </select>
+	            
+<!--
 	            <input type="button" value="申請日"/>
 	            <input type="button" value="申請書"/>
 	            <input type="button" value="申請者"/>
 	            <input type="button" value="状態"/>
 	            <input type="button" value="文章番号"/>
-
-	            <?php
-	                foreach($names as $name) {
-	                	echo($name->apply_date);
-	                	echo($name->type);
-	                	//echo($name->);
-	                	echo($name->status);
-	                	echo($name->apply_id);
-	                }
-	                ?>
-	                echo '<br />';
-	                <?php
-                 ?>
-	        </div>
-<!--
-            <div class="col-xs-12 col-md-push-3 col-md-6">
-                <div class="form-wrap">
-                    <div class="text-center"><h1>社員管理</h1></div>
-                    <br/>
-                    <form role="form" action="#" method="post" id="login-form" autocomplete="off">
-                        <div class="form-group">
-                            <label for="id" class="sr-only">ID</label>
-                            <input type="text" name="id" id="id" class="form-control" placeholder="ID を入力して下さい"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="sr-only">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Password を入力して下さい"/>
-                        </div>
-                        <br/>
-                        <button id="btn-login" class="btn btn-primary btn-block">ログイン</button>
-                    </form>
-                </div>
-            </div>
 -->
+
+                <br/><br/>
+
+                <table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
+                    <tr>
+                        <th bgcolor="#EE0000"><font color="#FFFFFF">申請日</font></th>
+                        <th bgcolor="#EE0000"><font color="#FFFFFF">申請書</font></th>
+                        <th bgcolor="#EE0000"><font color="#FFFFFF">申請者</font></th>
+                        <th bgcolor="#EE0000"><font color="#FFFFFF">状態</font></th>
+                        <th bgcolor="#EE0000"><font color="#FFFFFF">文章番号</font></th>
+                    </tr>
+                    <tr>
+                        <?php foreach($names as $name) { ?>
+                            <td><?php echo($name->apply_date); ?></td>
+                            <td><?php echo($name->type); ?></td>
+                            <td><?php echo($name->user_id); ?></td>
+                            <td><?php echo($name->status); ?></td>
+                            <td><?php echo($name->apply_id); ?></td>
+                        <?php } ?>
+                    </tr>
+                </table> 
+
         </div>
     </div>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
