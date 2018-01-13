@@ -22,7 +22,7 @@
                 <div class="form-wrap">
                     <div class="text-center"><h1>社員管理</h1></div>
                     <br/>
-                    <form role="form" action="#" method="post" id="login-form" autocomplete="off">
+                    <form role="form" action="/workflow/Request/" method="post" id="login-form" autocomplete="off">
                         <div class="form-group">
                             <label for="id" class="sr-only">ID</label>
                             <input type="text" name="id" id="id" class="form-control" placeholder="ID を入力して下さい"/>
