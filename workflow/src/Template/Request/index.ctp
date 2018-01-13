@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
 	<meta charset="utf-8" />
 	<title>休出休暇申請</title>
@@ -35,35 +35,35 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <form method="post" action="#" class="form-horizontal">
+                <form class="form-horizontal" action="/workflow/request/restRequestAdd" method="post">
                     <div class="form-group">
-                        <label for="employeeId" class="control-label col-sm-2">申請日</label>
+                        <label for="applicationDate" class="control-label col-sm-2">申請日</label>
                         <div class="col-sm-2">
-                            <input type="text" name="employeeId" id="employeeId" class="form-control input-sm" value="2017/04/21" disabled="disabled"/>
+                            <input type="text" name="applicationDate" id="applicationDate" class="form-control input-sm" value="2017-04-21" readonly/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="employeeId" class="control-label col-sm-2">社員番号</label>
+                        <label for="employeeNumber" class="control-label col-sm-2">社員番号</label>
                         <div class="col-sm-2">
-                            <input type="text" name="employeeId" id="employeeId" class="form-control input-sm" value="T00040" disabled="disabled"/>
+                            <input type="text" name="employeeNumber" id="employeeNumber" class="form-control input-sm" value="T00040" readonly/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="employeeId" class="control-label col-sm-2">部署</label>
+                        <label for="division" class="control-label col-sm-2">部署</label>
                         <div class="col-sm-2">
-                            <input type="text" name="employeeId" id="employeeId" class="form-control input-sm" value="システム開発事業部" disabled="disabled"/>
+                            <input type="text" name="division" id="division" class="form-control input-sm" value="システム開発事業部" readonly/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name" class="control-label col-sm-2">申請者</label>
+                        <label for="applicant" class="control-label col-sm-2">申請者</label>
                         <div class="col-sm-2">
-                            <input type="text" name="name" id="name" class="form-control input-sm" value="日和太郎" disabled="disabled"/>
+                            <input type="text" name="applicant" id="applicant" class="form-control input-sm" value="日和太郎" readonly/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="position" class="control-label col-sm-2">申請種別</label>
                         <div class="col-sm-2">
-                            <select name = "type" class="form-control input-sm" id="position">
+                            <select name = "applicationType" class="form-control input-sm" id="position">
                             	<option value = "1">申請種別を選択</option>
                             	<option value = "2">休暇</option>
                             	<option value = "3">休出</option>
@@ -71,15 +71,15 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="phoneNumber" class="control-label col-sm-2">休暇日</label>
+                        <label for="leaveDate" class="control-label col-sm-2">休暇日</label>
                         <div class="col-sm-2">
-                            <input type="text" name="phoneNumber" id="phoneNumber" class="form-control input-sm" value="" placeholder="2017/04/21"/>
+                            <input type="text" name="leaveDate" id="leaveDate" class="form-control input-sm" value="" placeholder="2017-04-21"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="position" class="control-label col-sm-2">休暇種別</label>
                         <div class="col-sm-2">
-                            <select name = "type" class="form-control input-sm" id="position">
+                            <select name = "leaveType" class="form-control input-sm" id="position">
                             	<option value = "1">休暇種別を選択</option>
                             	<option value = "2">有給休暇</option>
                             	<option value = "3">特別休暇</option>
@@ -87,10 +87,10 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="button" value="confirm" class="btn btn-primary">登録</button>
+                        <input type="submit" value="confirm" class="btn btn-primary">登録</button>
                     </div>
                 </form>
-            </div>
+            </div>  
         </div>
     </div>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
